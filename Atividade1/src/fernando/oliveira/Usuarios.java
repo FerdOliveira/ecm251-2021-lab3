@@ -22,10 +22,10 @@ public class Usuarios {
     }
 
     public String getSenha() { //No momento não preciso mas deixarei criado para todos um getter
-        return senha;
+        return this.senha;
     }
 
     public String getEmail() { //No momento não preciso mas deixarei criado para todos um getter
-        return email;
+        return this.email;
     }
 }
