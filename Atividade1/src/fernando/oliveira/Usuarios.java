@@ -17,5 +17,8 @@ public class Usuarios {
 //                ", com a senha:" + senha +
 //                ", e e-mail "+ email.toString();
 //    }
+    public String getNome(){ //metodo criado para pegar nome do usuario já que dito iremos utilizar ele em transacoes
+        return this.nome;
+    }
 
 }
