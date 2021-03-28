@@ -11,7 +11,7 @@ public class Contas {
     }
 
     public boolean sacar(double valor){ //Mesmo não tendo operação para sacar, sei que vou ter que usar o metodo sacar para tirar o dinheiro de alguem em transacoes e por o saldo ser privado preciso fazer aqui
-        if(valor >= this.saldo ){
+        if(valor >= this.saldo ){ // alem disso teve que ser boolean e ter feito uma verificação para ver se a mesma pode ser sacada, ja que precisamos veridicar se temos saldo para isto
             this.saldo -= valor;
             return true;
         } return false;
@@ -26,7 +26,7 @@ public class Contas {
     }
 
     public int getIdDaVez() { //No momento não preciso mas deixarei criado para todos um getter
-        return Contas.idDaVez;
+        return Contas.idDaVez; // Lembrando que aqui nao pode ser this, pois o atributo idDaVez nao deve ser algo instancia, e sim algo para a classe Contas.
     }
 }
 
