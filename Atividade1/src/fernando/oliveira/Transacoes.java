@@ -15,4 +15,14 @@ public class Transacoes {
         Random r = new Random();
         return r . nextInt (( max - min ) + 1 ) + min ;
     }
+
+    public static void transacao(Contas pagador, Contas recebedor, String boleto){ // metodo que precisa de 3 parametros a Conta que ira pagar, a Conta que ira receber, e o QRcode gerado em gerarOsQRCode
+        String s = boleto; //atribuida a string s o Qr code que no caso é o boleto aqui
+        String[] dados = s.split(";"); // transformar a string em lsita para uma melhor manipulação dos dados
+//        System.out.println(dados[0]); //teste para ver se pegava separado o 1° item que seria o id
+//        System.out.println(dados[1]); //teste para ver se pegava separado o 2° item que seria o nome
+//        System.out.println(dados[2]); //teste para ver se pegava separado o 3° item que seria o valor a ser pago
+//        System.out.println(dados[3]); //teste para ver se pegava separado o 4° item que seria o id
+
+    }
 }
