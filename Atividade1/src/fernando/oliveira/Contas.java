@@ -9,6 +9,13 @@ public class Contas {
         return this.idConta;
     }
 
+    public double getSaldo() { //No momento não preciso mas deixarei criado para todos um getter
+        return saldo;
+    }
+
+    public int getIdDaVez() { //No momento não preciso mas deixarei criado para todos um getter
+        return IdDaVez;
+    }
 }
 
 

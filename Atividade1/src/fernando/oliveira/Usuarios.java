@@ -21,4 +21,11 @@ public class Usuarios {
         return this.nome;
     }
 
+    public String getSenha() { //No momento não preciso mas deixarei criado para todos um getter
+        return senha;
+    }
+
+    public String getEmail() { //No momento não preciso mas deixarei criado para todos um getter
+        return email;
+    }
 }
