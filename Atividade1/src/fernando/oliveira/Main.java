@@ -23,5 +23,11 @@ public class Main {
 //	System.out.println(conta1.getSaldo());
 //	System.out.println(conta2.getSaldo());
 //	System.out.println(conta3.getSaldo());
-    }
+
+String Req1 = Transacoes.gerarOsQRCode(250,conta1,usuario1); // Gerar uma operação de recebimento de 250 para o usuario 1 conforme pedido
+//System.out.println(Req1); // saida -> 1;Murilo Zanini;250.0;3348
+String Req2 = Transacoes.gerarOsQRCode(1000,conta2,usuario2); // Gerar uma operação de recebimento de 1000 para o usuario 2 conforme pedido
+//System.out.println(Req2); // saida -> 2;Ferd;1000.0;6008
+
+	}
 }
