@@ -28,6 +28,11 @@ String Req1 = Transacoes.gerarOsQRCode(250,conta1,usuario1); // Gerar uma opera�
 //System.out.println(Req1); // saida -> 1;Murilo Zanini;250.0;3348
 String Req2 = Transacoes.gerarOsQRCode(1000,conta2,usuario2); // Gerar uma operação de recebimento de 1000 para o usuario 2 conforme pedido
 //System.out.println(Req2); // saida -> 2;Ferd;1000.0;6008
-Transacoes.transacao(conta2,conta1,Req1);
-	}
+
+Transacoes.transacao(conta2,conta1,Req1); // primeira transacao que teria que ser feita( usada tambem como teste)
+
+System.out.println(conta1.getSaldo()); // verificar se at transacao estava ocorrendo corretamente
+System.out.println(conta2.getSaldo()); // verificar se at transacao estava ocorrendo corretamente
+
+    }
 }

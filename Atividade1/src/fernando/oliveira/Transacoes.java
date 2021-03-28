@@ -24,5 +24,15 @@ public class Transacoes {
 //        System.out.println(dados[2]); //teste para ver se pegava separado o 3° item que seria o valor a ser pago
 //        System.out.println(dados[3]); //teste para ver se pegava separado o 4° item que seria o id
 
+//        if(pagador.getSaldo()>= dados[2]){  ///////TENTADO CRIAR DIRETO UM IF ASSIM, ENTRETANTO ESTA TUDO EM STRING, PRECISO CONVERTER PARA DOUBLE OU INT;
+//        pagador.sacar(dados[2]);
+//        recebedor.depositar(dados[2]);
+//    }
+        double valor = Double.parseDouble(dados[2]); // para tentar converter o valor  em string  tentei usar double valor = dados[2], entretanto deu erro e ele me ofereceu essa opcao que deu certo kkk
+        if(pagador.getSaldo()>=valor){
+            pagador.sacar(valor);
+            recebedor.depositar(valor);
+        }
+        System.out.println("ERRO SALDO INSUFICIENTE DO USUARIO COM ID: " + pagador.getIdConta());
     }
 }
