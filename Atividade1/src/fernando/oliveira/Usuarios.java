@@ -10,12 +10,12 @@ public class Usuarios {
         this.email = email;
         this.senha = senha;
     }
-    @Override
-    public String toString() {
-        return "Seu nome é: " +
-                  nome +
-                ", com a senha:" + senha +
-                ", e e-mail "+ email.toString();
-    }
+//    @Override
+//    public String toString() {
+//        return "Seu nome é: " +
+//                  nome +
+//                ", com a senha:" + senha +
+//                ", e e-mail "+ email.toString();
+//    }
 
 }
