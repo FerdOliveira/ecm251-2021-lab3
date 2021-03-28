@@ -15,11 +15,13 @@ public class Main {
 //	System.out.println(conta1.getIdConta()); //Ver se estava atualizando o ID da conta e se compialva a classe conta
 //	System.out.println(conta2.getIdConta()); //Ver se estava atualizando o ID da conta e se compialva a classe conta
 //	System.out.println(conta3.getIdConta()); //Ver se estava atualizando o ID da conta e se compialva a classe conta
-	conta1.depositar(100);
-	conta2.sacar(300);
-	conta3.sacar(500);
-	System.out.println(conta1.getSaldo());
-	System.out.println(conta2.getSaldo());
-	System.out.println(conta3.getSaldo());
+//		------------------------------------------------------
+//	conta1.depositar(100); //Teste para depositar
+//	conta2.sacar(300); //Teste para sacar, nao dando para sacar
+//	conta3.sacar(500); // Teste para sacar podendo dar certo
+//
+//	System.out.println(conta1.getSaldo());
+//	System.out.println(conta2.getSaldo());
+//	System.out.println(conta3.getSaldo());
     }
 }

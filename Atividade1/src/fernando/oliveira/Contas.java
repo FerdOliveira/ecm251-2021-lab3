@@ -21,7 +21,9 @@ public class Contas {
         if(valor <= this.saldo ){ // alem disso teve que ser boolean e ter feito uma verificação para ver se a mesma pode ser sacada, ja que precisamos veridicar se temos saldo para isto
             this.saldo -= valor;
             return true;
-        } return false;
+        }
+        System.out.println("o usuario:" + pessoa.getNome() + " não pode sacar dinheiro, pois nao possui creditos suficientes" ); // Mensagem  para caso o usario nao consiga sacar o dinheiro informar uma mesnagem de erro
+        return false;
     }
 
     public int getIdConta(){ //metodo criado para pegar o id da conta já que dito iremos utilizar ele em transacoes
