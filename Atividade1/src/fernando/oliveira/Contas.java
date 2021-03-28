@@ -18,7 +18,7 @@ public class Contas {
     }
 
     public boolean sacar(double valor){ //Mesmo não tendo operação para sacar, sei que vou ter que usar o metodo sacar para tirar o dinheiro de alguem em transacoes e por o saldo ser privado preciso fazer aqui
-        if(valor >= this.saldo ){ // alem disso teve que ser boolean e ter feito uma verificação para ver se a mesma pode ser sacada, ja que precisamos veridicar se temos saldo para isto
+        if(valor <= this.saldo ){ // alem disso teve que ser boolean e ter feito uma verificação para ver se a mesma pode ser sacada, ja que precisamos veridicar se temos saldo para isto
             this.saldo -= valor;
             return true;
         } return false;
