@@ -1,3 +1,6 @@
+// Fernando Oliveira de souza 19.00617-9
+// Este trabalho foi realizado com auxilio dos programas anteriores de aula e o curso de introdução a Orientacao da Alura
+
 package fernando.oliveira;
 
 public class Main {
@@ -33,9 +36,11 @@ public class Main {
 	Transacoes.transacao(conta2,conta1,Req1);
 	Transacoes.transacao(conta3,conta2,Req2);
 
-	System.out.println(conta1.getSaldo()); // verificar se at transacao estava ocorrendo corretamente
-	System.out.println(conta2.getSaldo()); // verificar se at transacao estava ocorrendo corretamente
-	System.out.println(conta3.getSaldo()); // verificar se at transacao estava ocorrendo corretamente
-
+//	System.out.println(conta1.getSaldo()); // verificar se at transacao estava ocorrendo corretamente
+//	System.out.println(conta2.getSaldo()); // verificar se at transacao estava ocorrendo corretamente
+//	System.out.println(conta3.getSaldo()); // verificar se at transacao estava ocorrendo corretamente
+		System.out.println("Nome Usuário: "+usuario1.getNome()+" - Saldo: "+ conta1.getSaldo()); //Exibi bonitinho
+		System.out.println("Nome Usuário: "+usuario2.getNome()+" - Saldo: "+ conta2.getSaldo()); //Exibi bonitinho
+		System.out.println("Nome Usuário: "+usuario3.getNome()+" - Saldo: "+ conta3.getSaldo()); //Exibi bonitinho 
     }
 }

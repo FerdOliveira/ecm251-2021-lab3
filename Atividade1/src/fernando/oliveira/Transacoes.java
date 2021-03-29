@@ -1,3 +1,5 @@
+// Fernando Oliveira de souza 19.00617-9
+// Este trabalho foi realizado com auxilio dos programas anteriores de aula e o curso de introdução a Orientacao da Alura
 package fernando.oliveira;
 
 import java.util.Random;
