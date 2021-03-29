@@ -29,10 +29,10 @@ public class Transacoes {
 //        recebedor.depositar(dados[2]);
 //    }
         double valor = Double.parseDouble(dados[2]); // para tentar converter o valor  em string  tentei usar double valor = dados[2], entretanto deu erro e ele me ofereceu essa opcao que deu certo kkk
-        if(pagador.getSaldo()>=valor){
+        if(pagador.getSaldo()>=valor){ //
             pagador.sacar(valor);
             recebedor.depositar(valor);
-        }
-        System.out.println("ERRO SALDO INSUFICIENTE DO USUARIO COM ID: " + pagador.getIdConta());
+        }else{
+        System.out.println("ERRO SALDO INSUFICIENTE DO USUARIO COM ID: " + pagador.getIdConta());}
     }
 }
