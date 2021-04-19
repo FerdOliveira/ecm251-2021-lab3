@@ -1,4 +1,4 @@
 package fernando.oliveira;
 
-public class Tesoura {
+public class Tesoura extends Jogada{
 }
