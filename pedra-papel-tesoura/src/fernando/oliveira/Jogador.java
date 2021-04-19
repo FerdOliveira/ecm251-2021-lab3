@@ -4,6 +4,7 @@ public class Jogador {
 
     private String nome;
     private boolean ehHumano;
+    private Jogada jogada
 
     public Jogador(String nome, boolean ehHumano) {
         this.nome = nome;
@@ -26,4 +27,14 @@ public class Jogador {
     public boolean isEhHumano() {
         return ehHumano;
     }
+
+    @Override
+    public String toString() {
+       return getNome();
+    }
+
+    public Jogada getJogada(){
+        return jogada;
+    }
+//Falta aqu
 }
