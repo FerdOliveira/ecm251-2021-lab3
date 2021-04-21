@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/pedra-papel-tesoura.iml" filepath="$PROJECT_DIR$/pedra-papel-tesoura.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula07Lab/pedra-papel-tesoura.iml" filepath="$PROJECT_DIR$/Aula07Lab/pedra-papel-tesoura.iml" />
     </modules>
   </component>
 </project>
