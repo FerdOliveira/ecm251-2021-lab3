@@ -8,17 +8,31 @@ public class Main {
     }
     private static void metodo1() {
         System.out.println("Inicio do metodo1");
-        metodo2();
+        try {
+            metodo2();
+            String nulo = null;
+            nulo.toUpperCase();
+        }
+        catch (ArrayIndexOutOfBoundsException exception){
+            System.out.println("Algo de errado aconteceu!");
+        }
+        catch (NullPointerException exception){
+            System.out.println("Faltou algo não?");
+        }
         System.out.println("Fim do metodo1");
     }
     private static void metodo2() {
         System.out.println("Inicio do metodo2");
         int [] array = new int[10];
-        for(int i = 0; i <= 15; i++){
-            array[i] = i;
-            System.out.println(i);
+        try {
+            for (int i = 0; i <= 15; i++) {
+                array[i] = i;
+                System.out.println(i);
+            }
+        }
+        catch (ArrayIndexOutOfBoundsException exception){
+            System.out.println("Banana!");
         }
         System.out.println("Fim do metodo2");
     }
 }
-
