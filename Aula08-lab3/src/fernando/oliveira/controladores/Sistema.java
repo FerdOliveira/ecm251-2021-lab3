@@ -2,7 +2,11 @@ package fernando.oliveira.controladores;
 
 import fernando.oliveira.models.Jogada;
 import fernando.oliveira.models.Jogador;
-
+import fernando.oliveira.models.bazinga.Lagarto;
+import fernando.oliveira.models.bazinga.Spoke;
+import fernando.oliveira.models.classico.Papel;
+import fernando.oliveira.models.classico.Pedra;
+import fernando.oliveira.models.classico.Tesoura;
 import java.util.Random;
 import java.util.Scanner;
 

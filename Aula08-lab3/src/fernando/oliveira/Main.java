@@ -1,6 +1,6 @@
 package fernando.oliveira;
 
-import carvalho.murilo.pedra_papel_tesoura_2.controladores.Sistema;
+import fernando.oliveira.controladores.Sistema;
 
 public class Main {
 

@@ -1,4 +1,5 @@
 package fernando.oliveira.models;
+import fernando.oliveira.enumeracoes.Resultado;
 
 public abstract class Jogada {
     final public Resultado verificaResultado(Jogada jogada) {

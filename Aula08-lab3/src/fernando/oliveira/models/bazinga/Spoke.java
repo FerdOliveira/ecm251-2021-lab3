@@ -5,6 +5,7 @@ import fernando.oliveira.models.classico.Papel;
 import fernando.oliveira.models.classico.Pedra;
 import fernando.oliveira.models.classico.Tesoura;
 
+
 public class Spoke extends Jogada {
 
     @Override
@@ -19,4 +20,4 @@ public class Spoke extends Jogada {
     @Override
     public String toString() {
         return "Spoke";
-    }
+    }}
