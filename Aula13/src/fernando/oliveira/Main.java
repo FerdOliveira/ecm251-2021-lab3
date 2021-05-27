@@ -1,5 +1,7 @@
 package fernando.oliveira;
 
+import fernando.oliveira.model.Item;
+
 import java.io.File;
 import java.util.Scanner;
 
@@ -23,6 +25,10 @@ public class Main {
             );
         }
 
+        }
+    public static Item pegaItem(String dados){
+        return new Item(dados.split(",")[0],
+                Double.parseDouble(dados.split(",")[1]));
     }
 
 }
