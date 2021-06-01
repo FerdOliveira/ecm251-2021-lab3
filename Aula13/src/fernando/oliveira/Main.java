@@ -1,7 +1,6 @@
 package fernando.oliveira;
 
 import fernando.oliveira.model.Item;
-
 import java.io.File;
 import java.util.Scanner;
 
