@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7b355039-0dd5-4a01-ad4f-373e89f84397" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/T2_Furlan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/T2_Furlan.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/T2_Furlan/fernando/oliveira/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/T2_Furlan/fernando/oliveira/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/T2_Furlan/fernando/oliveira/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/T2_Furlan/fernando/oliveira/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernando/oliveira/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernando/oliveira/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/T2_Furlan/fernando/oliveira/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/T2_Furlan/fernando/oliveira/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernando/oliveira/Cliente.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
