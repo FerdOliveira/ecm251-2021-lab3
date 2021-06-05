@@ -5,6 +5,7 @@ public class Account {
 
     public Account(double saldoInicial){
         this.balance = saldoInicial;
+        System.out.println("Seu saldo inicial é de R$ "+ this.balance);
     }
 
     public void deposit(Double deposit){
