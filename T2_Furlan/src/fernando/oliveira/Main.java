@@ -1,4 +1,5 @@
 package fernando.oliveira;
+
 //Fernando Oliveira de Souza 19.00617-9
 //Gustavo Zamboni do Carmo 19.01266-7
 //Matheus Takahashi Nakai 19.01355-8
@@ -16,5 +17,8 @@ public class Main {
         cliente2.start();
         cliente3.start();
         cliente4.start();
+
     }
+
+
 }

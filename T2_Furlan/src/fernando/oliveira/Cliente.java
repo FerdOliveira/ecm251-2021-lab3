@@ -13,6 +13,7 @@ public class Cliente extends Thread{
         this.account = account;
 
     }
+
     public double execute(){
         Random r1 = new Random();
         return(double) r1.nextInt(2);
@@ -25,6 +26,7 @@ public class Cliente extends Thread{
         double[] array = {10.0, 20.0, 50.0, 100.0};
 
         while(true){
+
             double r1 = execute();
             int v1 = account.randomValores();
             if(r1==1.0){
