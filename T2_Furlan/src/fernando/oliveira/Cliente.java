@@ -1,6 +1,8 @@
 package fernando.oliveira;
 
 import java.util.Random;
+import java.util.Scanner;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class Cliente extends Thread{
 
@@ -24,8 +26,13 @@ public class Cliente extends Thread{
     @Override
     public void run() {
         double[] array = {10.0, 20.0, 50.0, 100.0};
-
-        while(true){
+        Scanner scanner = new Scanner(System.in);
+        AtomicBoolean shouldContinue = new AtomicBoolean(true);
+        new Thread(() -> {
+            int i = scanner.nextInt();
+            if (i == 0) shouldContinue.set(false);
+        }).start();
+        while(shouldContinue.get()){
 
             double r1 = execute();
             int v1 = account.randomValores();
@@ -34,6 +41,11 @@ public class Cliente extends Thread{
 
             }else{
                 account.withdraw(array[v1]);
+            }
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
             System.out.println("Balance: R$ " + account.getBalance());
         }
