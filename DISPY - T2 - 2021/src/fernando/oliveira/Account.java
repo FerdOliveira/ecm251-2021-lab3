@@ -1,37 +1,31 @@
 package fernando.oliveira;
 
-import java.util.Random;
-
 //@AllArgsConstructor
 //@Getter
 public class Account {
 
-    private double balance;
+    // Atributos
+    private double balance; //saldo da conta
 
-    public Account(double saldoInicial) {
-        this.balance = saldoInicial;
+    //Métodos
+    public void deposit(int valor){
+        this.balance += valor;
+    }
+    public int withdraw(int valor){
+        if(valor > this.balance){
+            System.out.println("Não é possivel realizar esse saque!");
+            return -1;
+        }
+        else this.balance -= valor;
+        return 1;
     }
 
     public double getBalance() {
         return balance;
     }
 
-    public void deposit(Double deposit) {
-        balance += deposit;
-        System.out.println("Deposito efetuado: R$ " + deposit + " da " + Thread.currentThread().getName());
-    }
-
-    public int randomValores() {
-        Random v1 = new Random();
-        return v1.nextInt(3);
-    }
-
-    public void withdraw(Double withdraw) {
-        if (balance > withdraw) {
-            balance -= withdraw;
-            System.out.println("Foi retirado: R$- " + withdraw + " da " + Thread.currentThread().getName());
-        } else {
-            System.out.println("Saldo Indisponivel" + " da " + Thread.currentThread().getName());
-        }
+    //Construtor
+    public Account(double balance) {
+        this.balance = balance;
     }
 }

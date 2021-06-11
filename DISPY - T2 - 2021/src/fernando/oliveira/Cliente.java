@@ -1,49 +1,63 @@
 package fernando.oliveira;
 
 import java.util.Random;
-import java.util.concurrent.atomic.AtomicBoolean;
+/**
+ * responsável por gerenciar o cadastro do cliente, com nome e referencia
+ */
+public class Cliente  extends Thread{
 
-public class Cliente extends Thread {
-
+    //Atributos
     private String name;
     private Account account;
-    private AtomicBoolean atomicBoolean;
+    //Métodos
 
+    //Construtor
     public Cliente(String name, Account account) {
-        super(name);
         this.name = name;
         this.account = account;
-        this.atomicBoolean = new AtomicBoolean(true);
-    }
-
-    public double execute() {
-        Random r1 = new Random();
-        return r1.nextInt(2);
-    }
-
-    public Account getAccount() {
-        return this.account;
-    }
-
-    public void stopExecution() {
-        this.atomicBoolean.set(false);
     }
 
     @Override
     public void run() {
-        double[] array = {10.0, 20.0, 50.0, 100.0};
-        while (atomicBoolean.get()) {
-
-            double r1 = execute();
-            int v1 = account.randomValores();
-            if (r1 == 1.0) {
-                account.deposit(array[v1]);
-
-            } else {
-                account.withdraw(array[v1]);
+        Random random = new Random();
+        try {
+            // Tenta produzir um número inteiro aleatório
+            while (true) {
+                if (!execute()) {
+                    break;
+                }
+                Thread.sleep(random.nextInt(1000));
+                Thread.yield();
             }
-
-            System.out.println("Balance: R$ " + account.getBalance());
+        } catch (InterruptedException e) {
+            //e.printStackTrace();
+            System.err.println("Cliente " + Thread.currentThread().getName() + " encerrando...");
         }
     }
+
+    public boolean execute(){
+        int valores[] = {10,20,50,100};
+        Random number = new Random();
+        //Variaveis Auxiliares
+        int valor = valores[number.nextInt(4)];
+        int escolha = number.nextInt(2);// 1 para saque/ 2 para deposito
+
+        //Sacando ou depositando
+        if (escolha == 1) {
+
+            if(account.withdraw(valor) == 1) {
+                System.out.println("Cliente: " + this.name + " retirou " + valor);
+                System.out.println("Conta: saldo atualizado de: " + account.getBalance());
+            }
+            else System.out.println("Esperando deposito....");
+        }
+        if (escolha == 0) {
+            account.deposit(valor);
+            System.out.println("Clliente " + this.name + " depositou " + valor);
+            System.out.println("Conta: saldo atualizado de: " + account.getBalance());
+        }
+
+        return true;
+    }
+
 }
