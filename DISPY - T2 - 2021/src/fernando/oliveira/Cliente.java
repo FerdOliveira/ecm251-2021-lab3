@@ -54,7 +54,7 @@ public class Cliente  extends Thread{
         if (escolha == 0) {
             account.deposit(valor);
             System.out.println("Clliente " + this.name + " depositou " + valor);
-            System.out.println("Conta: saldo atualizado de: " + account.getBalance());
+            System.out.println("Conta: saldo atualizado de " + account.getBalance());
         }
 
         return true;
