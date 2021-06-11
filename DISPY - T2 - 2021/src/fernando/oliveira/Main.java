@@ -13,7 +13,7 @@ public class Main {
 
     public static void main(String[] args) {
         Account account = new Account(1000);
-        System.out.println("Conta criada com saldo inicial de:" + account.getBalance() + " R$");
+        System.out.println("Conta criada com saldo inicial de:" + account.getBalance());
         Cliente customers[] = {
                 new Cliente("GutaMax", account),
                 new Cliente("Ferd", account),
