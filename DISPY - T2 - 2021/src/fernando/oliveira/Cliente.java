@@ -1,18 +1,14 @@
 package fernando.oliveira;
 
 import java.util.Random;
-/**
- * responsável por gerenciar o cadastro do cliente, com nome e referencia
- */
-public class Cliente  extends Thread{
 
-    //Atributos
+public class Cliente extends Thread {
+
     private String name;
     private Account account;
-    //Métodos
 
-    //Construtor
     public Cliente(String name, Account account) {
+        super(name);
         this.name = name;
         this.account = account;
     }
@@ -21,7 +17,6 @@ public class Cliente  extends Thread{
     public void run() {
         Random random = new Random();
         try {
-            // Tenta produzir um número inteiro aleatório
             while (true) {
                 if (!execute()) {
                     break;
@@ -30,34 +25,29 @@ public class Cliente  extends Thread{
                 Thread.yield();
             }
         } catch (InterruptedException e) {
-            //e.printStackTrace();
+            //Pega a execao gerado quando se encerra
             System.err.println("Cliente " + Thread.currentThread().getName() + " encerrando...");
         }
     }
 
-    public boolean execute(){
-        int valores[] = {10,20,50,100};
+    public boolean execute() {
+        int valores[] = {10, 20, 50, 100};
+
         Random number = new Random();
-        //Variaveis Auxiliares
+
         int valor = valores[number.nextInt(4)];
-        int escolha = number.nextInt(2);// 1 para saque/ 2 para deposito
+        int DepositaSaca = number.nextInt(2);
 
-        //Sacando ou depositando
-        if (escolha == 1) {
-
-            if(account.withdraw(valor) == 1) {
-                System.out.println("Cliente: " + this.name + " retirou " + valor);
-                System.out.println("Conta: saldo atualizado de: " + account.getBalance());
-            }
-            else System.out.println("Esperando deposito....");
+        if (DepositaSaca == 0) {
+            account.withdraw(valor);
+            System.out.println("Cliente: " + this.name + " retirou " + valor);
+            System.out.println("Conta: saldo atualizado de: " + account.getBalance());
         }
-        if (escolha == 0) {
+        if (DepositaSaca == 1) {
             account.deposit(valor);
             System.out.println("Clliente " + this.name + " depositou " + valor);
             System.out.println("Conta: saldo atualizado de " + account.getBalance());
         }
-
         return true;
     }
-
 }

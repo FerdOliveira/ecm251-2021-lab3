@@ -4,19 +4,17 @@ package fernando.oliveira;
 //@Getter
 public class Account {
 
-    // Atributos
-    private double balance; //saldo da conta
+    private double balance;
 
-    //Métodos
-    public void deposit(int valor){
+    public void deposit(int valor) {
         this.balance += valor;
     }
-    public int withdraw(int valor){
-        if(valor > this.balance){
+
+    public int withdraw(int valor) {
+        if (valor > this.balance) {
             System.out.println("Não é possivel realizar esse saque!");
             return -1;
-        }
-        else this.balance -= valor;
+        } else this.balance -= valor;
         return 1;
     }
 
@@ -24,7 +22,6 @@ public class Account {
         return balance;
     }
 
-    //Construtor
     public Account(double balance) {
         this.balance = balance;
     }

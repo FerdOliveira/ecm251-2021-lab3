@@ -1,11 +1,16 @@
 package fernando.oliveira;
 
-//Fernando Oliveira de Souza 19.00617-9
-//Gustavo Zamboni do Carmo 19.01266-7
-//Matheus Takahashi Nakai 19.01355-8
-//Raphael Marchetti Calciolari 19.00828-7
+/**
+ * @author Fernando Oliveira de Souza 19.00617-9
+ * @author Gustavo Zamboni do Carmo 19.01266-7
+ * @author Matheus Takahashi Nakai 19.01355-8
+ * @author Raphael Marchetti Calciolari 19.00828-7
+ */
+
 import sun.misc.Signal;
+
 public class Main {
+
     public static void main(String[] args) {
         Account account = new Account(1000);
         System.out.println("Conta criada com saldo inicial de:"+account.getBalance()+" R$");
