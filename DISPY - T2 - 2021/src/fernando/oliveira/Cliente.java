@@ -41,7 +41,7 @@ public class Cliente extends Thread {
         if (DepositaSaca == 0) {
             account.withdraw(valor);
             System.out.println("Cliente: " + this.name + " retirou " + valor);
-            System.out.println("Conta: saldo atualizado de: " + account.getBalance());
+            System.out.println("Conta: saldo atualizado de " + account.getBalance());
         }
         if (DepositaSaca == 1) {
             account.deposit(valor);
