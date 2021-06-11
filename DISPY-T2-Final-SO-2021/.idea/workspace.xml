@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b355039-0dd5-4a01-ad4f-373e89f84397" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/T2_Furlan.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/T2_Furlan/fernando/oliveira/Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/T2_Furlan/fernando/oliveira/Cliente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/T2_Furlan/fernando/oliveira/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/Cliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +89,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DISPY-T2-Final-SO-2021/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager">
