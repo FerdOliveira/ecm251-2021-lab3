@@ -1,4 +1,4 @@
 package fernando.oliveira.models;
 
-public class ScriptGuys {
+public class ScriptGuys extends Membros{
 }

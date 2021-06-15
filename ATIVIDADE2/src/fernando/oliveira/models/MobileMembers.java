@@ -1,4 +1,4 @@
 package fernando.oliveira.models;
 
-public class MobileMembers {
+public class MobileMembers extends Membros{
 }

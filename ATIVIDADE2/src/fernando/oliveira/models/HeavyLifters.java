@@ -1,4 +1,4 @@
 package fernando.oliveira.models;
 
-public class HeavyLifters {
+public class HeavyLifters extends Membros{
 }
