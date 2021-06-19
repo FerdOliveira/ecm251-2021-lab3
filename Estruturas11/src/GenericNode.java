@@ -1,3 +1,6 @@
+/**
+ * Classe criada para entao a implementação das demais partes
+ */
 public class GenericNode {
     private final int tamanho;
     public String parent;
