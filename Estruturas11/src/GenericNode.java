@@ -1,13 +1,13 @@
-public class GenericNode extends Node {
+public class GenericNode {
     private final int tamanho;
-    public Node parent;
+    public String parent;
     public String path;
     public GenericNode fChild;
     public GenericNode next;
     protected static int sum = 0;
 
 
-    public GenericNode(int tamanho, String path, Node parent) {
+    public GenericNode(int tamanho, String path, String parent) {
         this.tamanho = tamanho;
         this.path = path;
         this.parent = parent;
