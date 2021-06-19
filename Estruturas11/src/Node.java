@@ -1,2 +1,3 @@
-public class Node {
+public abstract class Node {
+    public int data;
 }
