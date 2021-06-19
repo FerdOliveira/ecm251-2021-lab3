@@ -2,8 +2,8 @@ public class GenericRootNode extends GenericNode{
 
     private int size;
 
-    public GenericRootNode(int data, String path,int size) {
-        super(data, path);
+    public GenericRootNode(int tamanho, String path,int size) {
+        super(tamanho, path);
         this.size = size;
     }
 

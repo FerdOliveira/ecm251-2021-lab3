@@ -1,4 +1,5 @@
 public class GenericNode extends Node {
+    private final int tamanho;
     public Node parent;
     public String path;
     public GenericNode fChild;
@@ -6,16 +7,16 @@ public class GenericNode extends Node {
     protected static int sum = 0;
 
 
-    public GenericNode(int data, String path, Node parent) {
-        this.data = data;
+    public GenericNode(int tamanho, String path, Node parent) {
+        this.tamanho = tamanho;
         this.path = path;
         this.parent = parent;
         this.fChild = null;
         this.next = null;
     }
 
-    public GenericNode(int data, String path) {
-        this.data = data;
+    public GenericNode(int tamanho, String path) {
+        this.tamanho = tamanho;
         this.path = path;
         this.parent = null;
         this.fChild = null;
@@ -23,7 +24,7 @@ public class GenericNode extends Node {
     }
 
     private static void preOrder(GenericNode node) {
-        sum += node.data;
+        sum += node.tamanho;
         GenericNode auxNode = node.fChild;
         while (auxNode != null) {
             preOrder(auxNode);
