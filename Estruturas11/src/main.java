@@ -1,3 +1,9 @@
+
+
+/**
+ * Main,
+ * onde a mágica acontece
+ */
 public class main {
     public static void main(String[] args) throws Exception {
         //criando arvore
