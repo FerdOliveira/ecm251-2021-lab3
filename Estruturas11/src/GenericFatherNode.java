@@ -1,3 +1,7 @@
+/**
+ * Classe Genérica criada para diferenciar na árvore
+ */
+
 public class GenericFatherNode extends GenericNode{
 
     private int size;
