@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class Menu {
 
     public static void menu(){
+        boolean op = true;
+        while(op){
         System.out.println("Opções Disponiveis: ");
         System.out.println(" 1 - Castrar um novo usuário \n 2 - Postar uma mensagem \n 3 - Trocar o horário de trabalho \n 4 - Excluir usuário \n 5 - Para sair ");
         Scanner in = new Scanner(System.in);
@@ -19,7 +21,12 @@ public class Menu {
             String cargo = in.next();
             in.nextLine();
             break;
+        case 5:
+            System.out.println("Obrigado por usar nosso sistema");
+            op = false;
 
+
+    }
     }
     }
 }
