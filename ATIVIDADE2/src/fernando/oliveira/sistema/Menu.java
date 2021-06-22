@@ -18,8 +18,29 @@ public class Menu {
             String email = in.next();
             System.out.println(" Escolha o cargo para "+ nome + ":");
             System.out.println(" 1 - Mobile Members \n 2 - Heavy Lifters \n 3 - Script guys \n 4 - Big Brothers");
-            String cargo = in.next();
+            int cargo = in.nextInt();
             in.nextLine();
+            /**
+             * Este foi criado para cadastrar os membros em um determinado cargo
+             */
+            /// TODO: 22/06/2021 Criar um array para poder cadastrar os membros dentro deste array
+            switch (cargo) {
+                case 1:
+                    System.out.println("Cadastrando Mobile members");
+                    break;
+                case 2:
+                    System.out.println("Cadastrando Heavy lifters");
+                    break;
+                case 3:
+                    System.out.println("Cadastrando Script guy");
+                    break;
+                case 4:
+                    System.out.println("Cadastrando Big Brothers");
+                    break;
+                default:
+                    System.out.println("Este cargo nao existe");
+                    break;
+            }
             break;
         case 5:
             System.out.println("Obrigado por usar nosso sistema");
