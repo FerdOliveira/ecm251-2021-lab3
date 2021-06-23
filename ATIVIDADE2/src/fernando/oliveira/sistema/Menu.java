@@ -1,7 +1,10 @@
 package fernando.oliveira.sistema;
+import fernando.oliveira.models.Membros;
+
+import java.util.ArrayList;
 import java.util.Scanner;
 public class Menu {
-
+    private static ArrayList<Membros> listaUsuarios = new ArrayList<>(); //ArrayList foi escolhido por apresentar o que mais preciso https://lemus.webs.upv.es/wordpress/wp-content/uploads/2018/02/cheat-sheets.pdf
     public static void menu(){
         boolean op = true;
         while(op){
@@ -23,9 +26,9 @@ public class Menu {
             /**
              * Este foi criado para cadastrar os membros em um determinado cargo
              */
-            /// TODO: 22/06/2021 Criar um array para poder cadastrar os membros dentro deste array
             switch (cargo) {
                 case 1:
+                    listaUsuarios.add(new Membros(nome, email, "MOBILEMEMBER"));
                     System.out.println("Cadastrando Mobile members");
                     break;
                 case 2:
@@ -43,6 +46,7 @@ public class Menu {
             }
             break;
         case 5:
+            listaUsuarios.forEach(user -> System.out.println(user));
             System.out.println("Obrigado por usar nosso sistema");
             op = false;
 
