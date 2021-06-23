@@ -45,11 +45,17 @@ public class Menu {
                     break;
             }
             break;
+        case 4:
+            System.out.println("Digite a posição do membro cadastrado que deseja excluir: ");
+            int excluirMembro = in.nextInt();
+            in.nextLine();
+            listaUsuarios.remove(excluirMembro);
+            break;
         case 5:
             listaUsuarios.forEach(user -> System.out.println(user));
             System.out.println("Obrigado por usar nosso sistema");
             op = false;
-
+            break;
 
     }
     }
