@@ -9,7 +9,7 @@ public class Menu {
         boolean op = true;
         while(op){
         System.out.println("Opções Disponiveis: ");
-        System.out.println(" 1 - Castrar um novo usuário \n 2 - Postar uma mensagem \n 3 - Trocar o horário de trabalho \n 4 - Excluir usuário \n 5 - Para sair ");
+        System.out.println(" 1 - Castrar um novo usuário \n 2 - Postar uma mensagem \n 3 - Trocar o horário de trabalho \n 4 - Excluir usuário \n 5 - Apresentacao de todos os membros \n 6 - Para sair ");
         Scanner in = new Scanner(System.in);
         int num = in.nextInt();
         switch (num){
@@ -51,7 +51,15 @@ public class Menu {
             in.nextLine();
             listaUsuarios.remove(excluirMembro);
             break;
+            
         case 5:
+            int index = 0;
+            for(Membros membro: listaUsuarios){
+                listaUsuarios.get(index).apresentacao();
+                index++;
+            }
+            break;
+        case 6:
             listaUsuarios.forEach(user -> System.out.println(user));
             System.out.println("Obrigado por usar nosso sistema");
             op = false;
