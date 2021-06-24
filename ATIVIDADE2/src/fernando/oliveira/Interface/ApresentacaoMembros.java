@@ -1,4 +1,5 @@
 package fernando.oliveira.Interface;
 
-public class ApresentacaoMembros {
+public interface ApresentacaoMembros {
+    public void apresentacao();
 }
