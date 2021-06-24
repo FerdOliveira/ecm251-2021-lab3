@@ -1,6 +1,7 @@
 package fernando.oliveira.models;
 
 import fernando.oliveira.Interface.ApresentacaoMembros;
+import fernando.oliveira.enums.TiposDeMembro;
 
 public class Membros implements ApresentacaoMembros {
 
@@ -13,15 +14,13 @@ public class Membros implements ApresentacaoMembros {
         return email;
     }
 
-    public String getCargo() {
-        return cargo;
-    }
+    public TiposDeMembro getCargo() { return cargo; }
 
-    private String nome;
-    private String email;
-    private String cargo;
+    protected String nome;
+    protected String email;
+    protected TiposDeMembro cargo;
 
-    public Membros(String nome, String email, String cargo){
+    public Membros(String nome, String email, TiposDeMembro cargo){
         this.nome = nome;
         this.email = email;
         this.cargo = cargo;
