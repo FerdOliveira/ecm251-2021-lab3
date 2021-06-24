@@ -1,4 +1,5 @@
 package fernando.oliveira.Interface;
 
-public class PostarMensagem {
+public interface PostarMensagem {
+    public void postarMensagem();
 }
