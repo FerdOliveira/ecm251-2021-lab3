@@ -1,4 +1,9 @@
 package fernando.oliveira.models;
 
-public class MobileMembers{
+import fernando.oliveira.enums.TiposDeMembro;
+
+public class MobileMembers extends Membros{
+    public MobileMembers(String nome, String email, TiposDeMembro cargo) {
+        super(nome, email, cargo);
+    }
 }
