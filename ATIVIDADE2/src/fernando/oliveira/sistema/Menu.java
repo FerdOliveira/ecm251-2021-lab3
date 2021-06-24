@@ -22,7 +22,7 @@ public class Menu {
                 System.out.println(" HORÁRIO EXTRA ");
             }
             System.out.println("\n Opções Disponiveis: ");
-            System.out.println(" 1 - Castrar um novo usuário \n 2 - Postar uma mensagem \n 3 - Trocar o horário de trabalho \n 4 - Excluir usuário \n 5 - Apresentacao de todos os membros \n 6 - Para sair ");
+            System.out.println(" 1 - Castrar um novo usuário \n 2 - Postar uma mensagem \n 3 - Trocar o horário de trabalho \n 4 - Excluir membro ja cadastrado \n 5 - Apresentacao de todos os membros \n 6 - Para sair ");
             Scanner in = new Scanner(System.in);
 
             int num = in.nextInt();
@@ -30,10 +30,13 @@ public class Menu {
             switch (num) {
                 case 1:
                     System.out.println("Opcao de cadastrar escolhida");
+
                     System.out.println("Nome: ");
                     String nome = in.next();
+
                     System.out.println("Email: ");
                     String email = in.next();
+
                     System.out.println(" Escolha o cargo para " + nome + ":");
                     System.out.println(" 1 - Mobile Members \n 2 - Heavy Lifters \n 3 - Script guys \n 4 - Big Brothers");
                     int cargo = in.nextInt();
@@ -78,7 +81,6 @@ public class Menu {
                     }catch (IndexOutOfBoundsException e){
                         System.out.println("ESSA POSICAO NAO EXISTE");
                     }
-
                     break;
 
                 case 5:
@@ -93,6 +95,10 @@ public class Menu {
                     listaUsuarios.forEach(System.out::println);
                     System.out.println("Obrigado por usar nosso sistema");
                     op = false;
+                    break;
+                    
+                default:
+                    System.out.println("ESTA OPCAO NAO EXISTE, TENTE OUTRA");
                     break;
 
             }
