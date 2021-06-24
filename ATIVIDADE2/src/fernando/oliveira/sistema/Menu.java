@@ -15,12 +15,13 @@ public class Menu {
         boolean op = true;
 
         while (op) {
+            System.out.println("------------------------------------------------");
             if (horarioSistema.equals(HorarioSistema.NORMAL)){
-                System.out.println("HORÁRIO NORMAL");
+                System.out.println(" HORÁRIO NORMAL ");
             }else{
-                System.out.println("HORÁRIO EXTRA");
+                System.out.println(" HORÁRIO EXTRA ");
             }
-            System.out.println("Opções Disponiveis: ");
+            System.out.println("\n Opções Disponiveis: ");
             System.out.println(" 1 - Castrar um novo usuário \n 2 - Postar uma mensagem \n 3 - Trocar o horário de trabalho \n 4 - Excluir usuário \n 5 - Apresentacao de todos os membros \n 6 - Para sair ");
             Scanner in = new Scanner(System.in);
 
@@ -72,7 +73,12 @@ public class Menu {
                     System.out.println("Digite a posição do membro cadastrado que deseja excluir: ");
                     int excluirMembro = in.nextInt();
                     in.nextLine();
-                    listaUsuarios.remove(excluirMembro);
+                    try{
+                        listaUsuarios.remove(excluirMembro);
+                    }catch (IndexOutOfBoundsException e){
+                        System.out.println("ESSA POSICAO NAO EXISTE");
+                    }
+
                     break;
 
                 case 5:
