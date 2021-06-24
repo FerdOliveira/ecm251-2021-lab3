@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="adf29263-57ca-4f25-8395-9eb545c5db73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/sistema/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernando/oliveira/sistema/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/Interface/ApresentacaoMembros.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/Interface/ApresentacaoMembros.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/Interface/PostarMensagem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/Interface/PostarMensagem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/BigBrothers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/BigBrothers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/HeavyLifters.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/HeavyLifters.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/Membros.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/Membros.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/MobileMembers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/MobileMembers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/ScriptGuys.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/ScriptGuys.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/sistema/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/sistema/Menu.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +27,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1tdwfBceHyQgEeerPrIkxN1TkNF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
