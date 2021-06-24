@@ -1,7 +1,8 @@
 package fernando.oliveira.sistema;
 
 import fernando.oliveira.enums.HorarioSistema;
-import fernando.oliveira.models.Membros;
+import fernando.oliveira.enums.TiposDeMembro;
+import fernando.oliveira.models.*;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -46,16 +47,19 @@ public class Menu {
                      */
                     switch (cargo) {
                         case 1:
-                            listaUsuarios.add(new Membros(nome, email, "MOBILEMEMBER"));
+                            listaUsuarios.add(new MobileMembers(nome, email, TiposDeMembro.MOBILE_MEMBERS));
                             System.out.println("Cadastrando Mobile members");
                             break;
                         case 2:
+                            listaUsuarios.add(new HeavyLifters(nome, email, TiposDeMembro.HEAVY_LIFTERS));
                             System.out.println("Cadastrando Heavy lifters");
                             break;
                         case 3:
+                            listaUsuarios.add(new ScriptGuys(nome, email, TiposDeMembro.SCRIPT_GUYS));
                             System.out.println("Cadastrando Script guy");
                             break;
                         case 4:
+                            listaUsuarios.add(new BigBrothers(nome, email, TiposDeMembro.BIG_BROTHERS));
                             System.out.println("Cadastrando Big Brothers");
                             break;
                         default:
@@ -63,6 +67,7 @@ public class Menu {
                             break;
                     }
                     break;
+
                 case 3:
                     if (horarioSistema.equals(horarioSistema.NORMAL)){
                         horarioSistema = horarioSistema.EXTRA;
@@ -72,6 +77,7 @@ public class Menu {
                         System.out.println("Seu horario agora é NORMAL");
                     }
                     break;
+
                 case 4:
                     System.out.println("Digite a posição do membro cadastrado que deseja excluir: ");
                     int excluirMembro = in.nextInt();
@@ -96,7 +102,7 @@ public class Menu {
                     System.out.println("Obrigado por usar nosso sistema");
                     op = false;
                     break;
-                    
+
                 default:
                     System.out.println("ESTA OPCAO NAO EXISTE, TENTE OUTRA");
                     break;
