@@ -3,14 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="adf29263-57ca-4f25-8395-9eb545c5db73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/Interface/ApresentacaoMembros.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/Interface/ApresentacaoMembros.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/Interface/PostarMensagem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/Interface/PostarMensagem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/BigBrothers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/BigBrothers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/HeavyLifters.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/HeavyLifters.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/enums/TiposDeMembro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/enums/TiposDeMembro.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/Membros.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/Membros.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/MobileMembers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/MobileMembers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/ScriptGuys.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/ScriptGuys.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/sistema/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/sistema/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/models/BigBrothers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernando/oliveira/models/BigBrothers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/models/HeavyLifters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernando/oliveira/models/HeavyLifters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/models/ScriptGuys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernando/oliveira/models/ScriptGuys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/sistema/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernando/oliveira/sistema/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
