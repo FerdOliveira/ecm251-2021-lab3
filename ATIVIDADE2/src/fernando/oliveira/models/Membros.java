@@ -5,8 +5,6 @@ import fernando.oliveira.Interface.PostarMensagem;
 import fernando.oliveira.enums.HorarioSistema;
 import fernando.oliveira.enums.TiposDeMembro;
 
-import java.sql.SQLOutput;
-
 public abstract class Membros implements ApresentacaoMembros, PostarMensagem {
 
     //TODO: tentar usar o lombok para os getters e construtor
