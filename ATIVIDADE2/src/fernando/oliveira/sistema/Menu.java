@@ -94,7 +94,7 @@ public class Menu {
                     System.out.println("Digite a posição do membro cadastrado que deseja excluir: ");
                     int excluirMembro = in.nextInt();
                     in.nextLine();
-                    
+
                     try {
                         listaUsuarios.remove(excluirMembro);
                     } catch (IndexOutOfBoundsException e) {
