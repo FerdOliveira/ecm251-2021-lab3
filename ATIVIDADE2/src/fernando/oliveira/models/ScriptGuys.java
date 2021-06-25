@@ -6,4 +6,5 @@ public class ScriptGuys extends Membros {
     public ScriptGuys(String nome, String email, TiposDeMembro cargo) {
         super(nome, email, cargo);
     }
+
 }
