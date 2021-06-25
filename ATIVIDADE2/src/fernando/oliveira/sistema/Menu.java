@@ -17,9 +17,9 @@ public class Menu {
 
         while (op) {
             System.out.println("------------------------------------------------");
-            if (horarioSistema.equals(HorarioSistema.NORMAL)){
+            if (horarioSistema.equals(HorarioSistema.NORMAL)) {
                 System.out.println(" HORÁRIO NORMAL ");
-            }else{
+            } else {
                 System.out.println(" HORÁRIO EXTRA ");
             }
             System.out.println("\n Opções Disponiveis: ");
@@ -27,21 +27,22 @@ public class Menu {
             Scanner in = new Scanner(System.in);
 
             int num = in.nextInt();
+            in.nextLine();
 
             switch (num) {
                 case 1:
                     System.out.println("Opcao de cadastrar escolhida");
 
                     System.out.println("Nome: ");
-                    String nome = in.next();
+                    String nome = in.nextLine();
 
                     System.out.println("Email: ");
                     String email = in.next();
+                    in.nextLine();
 
                     System.out.println(" Escolha o cargo para " + nome + ":");
                     System.out.println(" 1 - Mobile Members \n 2 - Heavy Lifters \n 3 - Script guys \n 4 - Big Brothers");
                     int cargo = in.nextInt();
-                    in.nextLine();
                     /**
                      * Este foi criado para cadastrar os membros em um determinado cargo
                      */
@@ -68,11 +69,22 @@ public class Menu {
                     }
                     break;
 
+                case 2:
+
+                    System.out.println("Qual cargo irá mandar a mensagem? ");
+                    String cargoMensagem = in.next();
+                    in.nextLine();
+                    TiposDeMembro membroPosta = TiposDeMembro.valueOf(cargoMensagem);
+                    System.out.println("Digite a mensagem que deseja mandar para os membros: ");
+                    String mensagem = in.nextLine();
+                    listaUsuarios.forEach(membro -> membro.postarMensagem(mensagem, horarioSistema, membroPosta));
+                    break;
+
                 case 3:
-                    if (horarioSistema.equals(horarioSistema.NORMAL)){
+                    if (horarioSistema.NORMAL.equals(horarioSistema)) {
                         horarioSistema = horarioSistema.EXTRA;
                         System.out.println("Voce agora esta fazendo hora EXTRA");
-                    }else{
+                    } else {
                         horarioSistema = horarioSistema.NORMAL;
                         System.out.println("Seu horario agora é NORMAL");
                     }
@@ -82,18 +94,19 @@ public class Menu {
                     System.out.println("Digite a posição do membro cadastrado que deseja excluir: ");
                     int excluirMembro = in.nextInt();
                     in.nextLine();
-                    try{
+                    
+                    try {
                         listaUsuarios.remove(excluirMembro);
-                    }catch (IndexOutOfBoundsException e){
+                    } catch (IndexOutOfBoundsException e) {
                         System.out.println("ESSA POSICAO NAO EXISTE");
                     }
                     break;
 
                 case 5:
-                    int index = 0;
+                    int index2 = 0;
                     for (Membros membro : listaUsuarios) {
-                        listaUsuarios.get(index).apresentacao();
-                        index++;
+                        listaUsuarios.get(index2).apresentacao();
+                        index2++;
                     }
                     break;
 
