@@ -1,11 +1,12 @@
 package fernando.oliveira.enums;
-
+/**
+ * enum de tipos de membros, que nao servem apenas para determinar o cargo do membro mas tb armazenam a assinatura dos membros
+ */
 public enum TiposDeMembro {
     MOBILE_MEMBERS {
         @Override
         public String getExtraAssinatura() {
             return "Happy_C0d1ng. Maskers";
-
         }
 
         @Override
@@ -13,7 +14,6 @@ public enum TiposDeMembro {
             return "Happy Coding!";
         }
     }, HEAVY_LIFTERS {
-
         @Override
         public String getExtraAssinatura() {
             return "N00b_qu3_n_Se_r3pita.bat";
