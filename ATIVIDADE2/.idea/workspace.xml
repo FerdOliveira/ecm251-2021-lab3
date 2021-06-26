@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adf29263-57ca-4f25-8395-9eb545c5db73" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/arquivo_super_Secreto_nao_abrir.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/Interface/PostarMensagem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/Interface/PostarMensagem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/enums/TiposDeMembro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/enums/TiposDeMembro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/Membros.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/Membros.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/MobileMembers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/models/MobileMembers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/sistema/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/sistema/Login.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/sistema/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ATIVIDADE2/fernando/oliveira/sistema/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernando/oliveira/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/sistema/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernando/oliveira/sistema/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/sistema/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernando/oliveira/sistema/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,5 +141,15 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassCastException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
