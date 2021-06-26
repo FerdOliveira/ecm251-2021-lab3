@@ -4,6 +4,7 @@ import fernando.oliveira.enums.HorarioSistema;
 import fernando.oliveira.enums.TiposDeMembro;
 import fernando.oliveira.models.*;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -11,8 +12,18 @@ public class Menu {
 
     private static ArrayList<Membros> listaUsuarios = new ArrayList<>(); //ArrayList foi escolhido por apresentar o que mais preciso https://lemus.webs.upv.es/wordpress/wp-content/uploads/2018/02/cheat-sheets.pdf
     private static HorarioSistema horarioSistema = HorarioSistema.NORMAL;
+    private boolean executarSistema;
 
-    public static void menu() {
+    static void writeCSV() throws FileNotFoundException {
+        File csvFile = new File("arquivo_super_Secreto_nao_abrir.csv");
+        PrintWriter out = new PrintWriter(csvFile);
+        for (Membros usuario : listaUsuarios) {
+            out.println(usuario);
+        }
+        out.close();
+    }
+
+    public static void menu() throws IOException {
         boolean op = true;
 
         while (op) {
@@ -111,7 +122,12 @@ public class Menu {
                     break;
 
                 case 6:
-                    listaUsuarios.forEach(System.out::println);
+//                    listaUsuarios.forEach(System.out::println);
+                    try {
+                        writeCSV();
+                    } catch (FileNotFoundException e) {
+                        System.out.println("Arquivo não Encontrado...");
+                    }
                     System.out.println("Obrigado por usar nosso sistema");
                     op = false;
                     break;
