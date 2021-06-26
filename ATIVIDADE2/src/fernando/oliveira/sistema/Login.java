@@ -1,11 +1,14 @@
 package fernando.oliveira.sistema;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
 import static fernando.oliveira.sistema.Menu.menu;
+
+/**
+ * Classe de Login que faz com que verifique se é um big brother ou não, para ter acesso ao login exato verificar o arquivo de LoginBigBrother
+ */
 
 public class Login {
     public static void run() throws IOException {
