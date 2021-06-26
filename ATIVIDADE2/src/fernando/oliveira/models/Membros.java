@@ -5,6 +5,10 @@ import fernando.oliveira.Interface.PostarMensagem;
 import fernando.oliveira.enums.HorarioSistema;
 import fernando.oliveira.enums.TiposDeMembro;
 
+/**
+ * Classe mae de BigBrothers/HevayLifters/MobileMembers/ScriptGuys
+ */
+
 public abstract class Membros implements ApresentacaoMembros, PostarMensagem {
 
     //TODO: tentar usar o lombok para os getters e construtor
@@ -16,11 +20,17 @@ public abstract class Membros implements ApresentacaoMembros, PostarMensagem {
         return email;
     }
 
-    public TiposDeMembro getCargo() { return cargo; }
+    public TiposDeMembro getCargo() {
+        return cargo;
+    }
 
-    public String getExtraAssinatura() { return extraAssinatura; }
+    public String getExtraAssinatura() {
+        return extraAssinatura;
+    }
 
-    public String getNormalAssinatura() { return normalAssinatura; }
+    public String getNormalAssinatura() {
+        return normalAssinatura;
+    }
 
     protected String nome;
     protected String email;
@@ -28,6 +38,13 @@ public abstract class Membros implements ApresentacaoMembros, PostarMensagem {
     protected String extraAssinatura = "";
     protected String normalAssinatura = "";
 
+    /**
+     * Metodo construtor da classe abstrata Membro
+     *
+     * @param nome  nome de usuario do membro
+     * @param email Email do membro
+     * @param cargo Cargo do membro
+     */
     public Membros(String nome, String email, TiposDeMembro cargo) {
         this.nome = nome;
         this.email = email;
@@ -49,12 +66,16 @@ public abstract class Membros implements ApresentacaoMembros, PostarMensagem {
                 '}';
     }// Se nao tiver esse override ele printa assim a lista de membros "fernando.oliveira.models.Membros@9629756"
 
+    /**
+     * Método de postarMensagem com a assinatura do cargo que estiver mandando mensagem
+     */
+
     public void postarMensagem(String mensagem, HorarioSistema horarioSistema, TiposDeMembro membro) {
         System.out.println("Enviando mensagem: ");
-        if (horarioSistema.EXTRA.equals(horarioSistema)){
-            System.out.println( mensagem + "\nAss: " + membro.getExtraAssinatura());
-        }else{
-            System.out.println( mensagem + "\nAss: " + membro.getNormalAssinatura());
+        if (horarioSistema.EXTRA.equals(horarioSistema)) {
+            System.out.println(mensagem + "\nAss: " + membro.getExtraAssinatura());
+        } else {
+            System.out.println(mensagem + "\nAss: " + membro.getNormalAssinatura());
         }
         System.out.println("---------------------------------------------");
     }
