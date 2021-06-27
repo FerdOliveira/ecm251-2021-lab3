@@ -3,18 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="adf29263-57ca-4f25-8395-9eb545c5db73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/Interface/ApresentacaoMembros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernando/oliveira/Interface/ApresentacaoMembros.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/Interface/PostarMensagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernando/oliveira/Interface/PostarMensagem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernando/oliveira/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/enums/HorarioSistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernando/oliveira/enums/HorarioSistema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/enums/TiposDeMembro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernando/oliveira/enums/TiposDeMembro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/models/BigBrothers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernando/oliveira/models/BigBrothers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/models/HeavyLifters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernando/oliveira/models/HeavyLifters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivo_super_Secreto_nao_abrir.csv" beforeDir="false" afterPath="$PROJECT_DIR$/arquivo_super_Secreto_nao_abrir.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/models/Membros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernando/oliveira/models/Membros.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/models/MobileMembers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernando/oliveira/models/MobileMembers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/models/ScriptGuys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernando/oliveira/models/ScriptGuys.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/sistema/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernando/oliveira/sistema/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fernando/oliveira/sistema/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fernando/oliveira/sistema/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
