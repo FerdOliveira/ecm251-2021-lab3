@@ -82,29 +82,20 @@ public class Menu {
                     break;
 
                 /**
-                 * Case 2 para postar uma mensagem para membros onde recebe o tipo de cargo que enviara a mensagem para todos
+                 * Case 2 para postar uma mensagem para todos os membros, onde todos os membros mandam a mesma mensagem
+                 * e assinam diferente para cada cargo
                  */
                 case 2:
-                    System.out.println("Qual cargo irá mandar a mensagem? ");
-                    String cargoMensagem = in.next();
-                    in.nextLine();
-                    TiposDeMembro membroPosta = TiposDeMembro.valueOf(cargoMensagem);
                     System.out.println("Digite a mensagem que deseja mandar para os membros: ");
                     String mensagem = in.nextLine();
-                    listaUsuarios.forEach(membro -> membro.postarMensagem(mensagem, horarioSistema, membroPosta));
+                    listaUsuarios.forEach(membro -> membro.postarMensagem(mensagem, horarioSistema));
                     break;
 
                 /**
                  * Case 3 para trocar o horário do sistema onde que compara com o atual e troca o mesmo
                  */
                 case 3:
-                    if (horarioSistema.NORMAL.equals(horarioSistema)) {
-                        horarioSistema = horarioSistema.EXTRA;
-                        System.out.println("Voce agora esta fazendo hora EXTRA");
-                    } else {
-                        horarioSistema = horarioSistema.NORMAL;
-                        System.out.println("Seu horario agora é NORMAL");
-                    }
+                    horarioSistema = horarioSistema.trocarHorario();
                     break;
 
                 /**
